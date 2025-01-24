@@ -463,5 +463,102 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-clous-btn" type="button">
+          <svg class="modal-clous-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <p class="modal-slogan">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="review-form">
+          <div class="review-form-fields-wrapper">
+            <label class="review-form-fields-label" for="user-name">Name</label>
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-fields"
+                id="user-name"
+                type="text"
+                name="user-name"
+                pattern="[a-Za-Z-яА-ЯіІїЇЄєГг']+"
+                required
+              />
+              <svg class="review-form-fields-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="review-form-fields-wrapper">
+            <label class="review-form-fields-label" for="user-email"
+              >Email</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-fields"
+                id="user-email"
+                type="email"
+                name="user-email"
+                required
+              />
+              <svg class="review-form-fields-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="review-form-fields-wrapper">
+            <label class="review-form-fields-label" for="user-name"
+              >Phone namber</label
+            >
+            <div class="review-form-input-wrapper">
+              <input
+                class="review-form-fields"
+                id="user-phone"
+                type="tel"
+                name="user-phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg class="review-form-fields-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="review-form-fields-wrapper">
+            <label class="review-form-fields-label" for="user-name"
+              >Comment</label
+            >
+            <textarea
+              class="review-form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter text"
+              required
+            ></textarea>
+          </div>
+          <div class="review-rorm-checkbox-wrapper">
+            <input
+              class="review-form-policy-checkbox"
+              id="Privacy-policy"
+              type="checkbox"
+              name="Privacy-policy"
+              value="true"
+              required
+            />
+            <label class="review-form-policy-label" for="Privacy-policy">
+              I accept the terms and conditions of the
+              <a class="review-form-policy-link" href=""> Privacy Policy</a>
+            </label>
+          </div>
+          <button class="review-form-submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
