@@ -687,7 +687,7 @@ background-color:#404bbf;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms linear;
+
 }
 .backdrop.is-open {
   opacity: 1;
@@ -697,11 +697,11 @@ background-color:#404bbf;
   position: absolute;
   top: 50%;
   left:50%;
+  width: 408px; 
   transform: translate(-50%, -50%);
   min-height: 584px;
 height: 95%;
-max-height:584px;
-width: 408px; 
+max-height:584px; 
 background: #fcfcfc;
  box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
 overflow-y: auto;
@@ -731,6 +731,15 @@ border-radius: 4px;
   background-color: #404bbf; 
   border: none;
 }
+.modal-slogan {
+  font-weight: 500;
+font-size: 16px; 
+line-height: 1.5;
+margin-bottom: 16px;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+}
 .modal-clous-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -744,15 +753,7 @@ border-radius: 4px;
 .modal {
   padding: 72px 24px 24px 24px;
 }
-.modal-slogan {
-  font-weight: 500;
-font-size: 16px; 
-line-height: 1.5;
-margin-bottom: 16px;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
-} 
+ 
 .review-form-fields-wrapper {
   margin-bottom: 8px;
   
