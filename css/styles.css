@@ -730,6 +730,7 @@ border-radius: 4px;
 .modal-closed-btn:focus {
   background-color: #404bbf; 
   border: none;
+    fill: #ffffff
 }
 .modal-slogan {
   font-weight: 500;
