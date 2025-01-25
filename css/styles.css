@@ -642,10 +642,10 @@ overflow-y: auto;
 transform: translate(-50%, -50%);
 border-radius: 4px;
 background: #fcfcfc;
-padding-top: 112px;
+padding-top: 72px;
 padding-left: 24px;
 padding-right: 24px;
-padding-bottom: 136px;
+
 }
 .modal-clous-btn {
   position: absolute;
@@ -736,7 +736,66 @@ transition: border-color 250ms linear;
 .review-form-comment::placeholder {
   color: rgba(46, 47, 66, 0.4)
 }
-.review-form-comment:hover {
+.review-form-comment:focus {
   outline: transparent;
   border-color: #4d5ae5;
+}
+
+.review-form-checkbox-wrapper {
+  margin-bottom: 24px;
+}
+.review-form-policy-label {
+font-size: 12px;
+letter-spacing: 0.04em;
+color: #8e8f99;
+}
+.review-form-policy-link {
+line-height: 1.34;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: #4d5ae5;
+}
+.review-form-custom-checkbox{
+   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+fill:#2E2F42;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width:16px;
+  height: 16px;
+  fill: transparent;
+  margin-right: 8px;
+}
+.review-form-policy-checkbox:checked
+ + .review-form-policy-label 
+ .review-form-custom-checkbox {
+background-color:#4d5ae5;
+border-color: #4d5ae5;
+fill: #fcfcfc;
+cursor: pointer;
+}
+.review-form-policy-checkbox:focus
+ + .review-form-policy-label 
+ .review-form-custom-checkbox
+.review-form-submit-btn {
+border-color: #4d5ae5;
+}
+.review-form-submit-btn {
+  border-radius: 4px;
+padding: 16px 32px;
+min-width:169px;;
+height: 56px;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+text-align: center;
+color: #ffffff;
+background-color: #4d5ae5;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-form-submit-btn:hover,
+.review-form-submit-btn:focus {
+  background-color: #404bbf;
 }
